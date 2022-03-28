@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>using class create object using syntax exp</h1>
+    <script>
+    //bina class ke bhi object ko banaya ja sakta hai java script me but other language me object ko create kerne ke liye class ki need hoti hai
+        //class ko two type se likh sakte hai java script me 1 decl   ......2 expression ki help se 
+        //1 ......... decla .,,,,,class same to same constructor function ke tarah behave krega
+       const product1= class product{
+            constructor(name,price,model,itemCode,discount){
+                this.name=name;
+                this.price=price;
+                this.model=model;
+                this.itemCode=itemCode;
+                this.discount=discount;
+                this.discountValue=function(){
+                    return price*40/100
+                }
+            }
+        }
+
+        const pencil=new product1('pencil',30,'p-87',27777,2);
+        const mobile=new product1('oppo',30000,'oppof15',278237982,40); 
+        const bat=new product1('bat',300,'p-87',27777,20);
+        const cycle=new product1('cycle',3000,'oppof15',278237982,40); 
+        const honda=new product1('honda',90000,'p-87',27777,20);
+        const car=new product1('car',3000000,'carf15',278237982,40); 
+        const bullet=new product1('bullet',200000,'p-87',27777,20);
+        const bmw=new product1('bmw',3000000000,'bmwf15',278237982,40); 
+        
+        </script>
+</body>
+</html>

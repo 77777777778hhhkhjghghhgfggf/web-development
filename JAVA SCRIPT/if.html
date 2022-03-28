@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: 2px solid black;
+            text-align: center;
+            display: inline-block;
+            color: navy;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 20%;
+            margin-bottom: 40%;
+            text-decoration: double;
+            background-color: chocolate;
+            font-size: 300%;
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+     <button>youtuber1:click</button>   
+    <script>
+     let anil=   document.querySelector('button');
+     anil.addEventListener('click',inputMsg);
+     function inputMsg(){
+         let name=prompt('whats your name');
+         anil.textContent ='youtuber1:'+name;
+     }
+    </script>
+</body>
+</html>

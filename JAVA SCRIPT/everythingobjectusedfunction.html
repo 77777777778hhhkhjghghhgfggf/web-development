@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>using function in object</h1>
+    <script>
+        function product(name,branch){
+            return{
+            name:name,
+            branch:branch,
+
+
+            }
+        }
+        const student=product('anil','cse');
+        product.boy="66";
+        product.girl=777;
+        //object ke under object
+        notes={
+            intro:"hello sir ji how are you"
+        }
+        //create function run time
+        let check=function(){
+            console.log("anil gupta ji how are you");
+        }
+    
+        product.total=9999999;
+       // delete keyword is predefined
+        delete product.branch;
+        console.log(product);
+
+    </script>
+</body>
+</html>
